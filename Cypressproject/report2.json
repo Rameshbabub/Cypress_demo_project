@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-22T15:38:20.092Z",
+    "end": "2023-02-22T15:38:50.413Z",
+    "duration": 14483,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9327a7ac-a030-4c90-a057-69da063b00b7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test.cy.js",
+      "file": "cypress\\e2e\\test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Google test",
+          "fullTitle": "Google test",
+          "timedOut": null,
+          "duration": 7960,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://www.google.com');\ncy.get('.gLFyf').type('Automation AI{enter}'); // timeout of 6 seconds cy.get('.gLFyf', {timeout: 6000})\ncy.contains('Videos').click();",
+          "err": {},
+          "uuid": "83700109-7d6a-404f-8264-44129240b8b1",
+          "parentUUID": "9327a7ac-a030-4c90-a057-69da063b00b7",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Login test",
+          "fullTitle": "Login test",
+          "timedOut": null,
+          "duration": 5138,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');\ncy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Admin');\ncy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type('admin123');\ncy.get('.oxd-button').click();",
+          "err": {},
+          "uuid": "1b3a59c9-fc42-4f64-932d-db7c7d9f5a5f",
+          "parentUUID": "9327a7ac-a030-4c90-a057-69da063b00b7",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "83700109-7d6a-404f-8264-44129240b8b1",
+        "1b3a59c9-fc42-4f64-932d-db7c7d9f5a5f"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 13098,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1775c4b8-9560-4981-93bf-23297ac53080",
+      "title": "",
+      "fullFile": "cypress\\e2e\\spec.cy.js",
+      "file": "cypress\\e2e\\spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "332445a3-3a85-4d17-b91c-d0cc398e2970",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 1385,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');",
+              "err": {},
+              "uuid": "31d77464-02cd-476b-8fcd-c53e43c6bfa6",
+              "parentUUID": "332445a3-3a85-4d17-b91c-d0cc398e2970",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "31d77464-02cd-476b-8fcd-c53e43c6bfa6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1385,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
